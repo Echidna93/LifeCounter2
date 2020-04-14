@@ -3,22 +3,16 @@ package com.example.lifecounter2;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
@@ -75,7 +69,7 @@ public class LifeCounterFragment extends Fragment {
         if(container == null){
             return null;
         }
-        View ll = inflater.inflate(R.layout.fragment_life_counter, container, false);
+        View ll = inflater.inflate(R.layout.life_counter, container, false);
         Log.d(TAG, "here");
         final List<Button> dButtons = new ArrayList<Button>();
         List<Button> iButtons = new ArrayList<Button>();
