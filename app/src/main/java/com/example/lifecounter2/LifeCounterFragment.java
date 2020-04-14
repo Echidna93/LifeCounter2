@@ -151,5 +151,11 @@ public class LifeCounterFragment extends Fragment {
                 view.setText(new String(String.valueOf(lifeCount)));
         }
     }
-
+/*
+    private void setUpLifeCountViews(int numPlayers){
+        for(int i = 0; i < numPlayers; i++){
+            int id = getResources().getIdentifier()
+        }
+    }
+*/
 }
