@@ -25,7 +25,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
     @Override
     public CharSequence getPageTitle(int position){
