@@ -73,7 +73,10 @@ public class LifeCounterFragment extends Fragment {
         Log.d(TAG, "here");
         final List<Button> dButtons = new ArrayList<Button>();
         List<Button> iButtons = new ArrayList<Button>();
+        int numPlayers = 4;
         final List<TextView> lifeCounts = new ArrayList<TextView>();
+        //setUpLifeCountViews(ll, lifeCounts, numPlayers);
+
         TextView lifeCountView1 = (TextView) ll.findViewById(R.id.lifeCountView1ID);
         lifeCountView1.setText("40");
         lifeCounts.add(lifeCountView1);
@@ -86,7 +89,9 @@ public class LifeCounterFragment extends Fragment {
         TextView lifeCountView4 = (TextView) ll.findViewById(R.id.lifeCountView4ID);
         lifeCountView4.setText("40");
         lifeCounts.add(lifeCountView4);
+
         // decrease buttons
+
         Button decreaseLifeCountButtonView1 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView1ID);
         dButtons.add(decreaseLifeCountButtonView1);
         Button decreaseLifeCountButtonView2 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView2ID);
@@ -146,10 +151,14 @@ public class LifeCounterFragment extends Fragment {
         }
     }
 /*
-    private void setUpLifeCountViews(int numPlayers){
-        for(int i = 0; i < numPlayers; i++){
-            int id = getResources().getIdentifier()
+    private void setUpLifeCountViews(View v, List list, int numPlayers){
+        for(int i = 1; i <= numPlayers; i++){
+            String n = "lifeCountView" + i + "ID";
+            TextView tv = (LifeCounterFragment) getView().findViewById(R.id.n);
+            tv.setText("40");
+            list.add(tv);
         }
     }
-*/
+
+ */
 }

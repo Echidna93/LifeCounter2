@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: replace ID with tag in this file -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,7 +32,7 @@
                     android:id="@+id/lifeCountView1ID"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
-                    android:textSize="@dimen/buttonTextSize"
+                    android:autoSizeTextType="uniform"
                     android:layout_gravity="center_horizontal"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -113,13 +114,11 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!--row 1 col 0-->
         <androidx.cardview.widget.CardView
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            app:cardElevation="18dp">
+            android:layout_columnWeight="1">
             <LinearLayout
-                android:id="@+id/linearLayoutView3ID"
+                android:tag="@+id/linearLayoutView3ID"
                 android:layout_width="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical"
@@ -160,12 +159,14 @@
                     style="@style/Widget.MaterialComponents.Button"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+        <!--row 1 col 0-->
 
         <!--row 1 col 1-->
 
         <androidx.cardview.widget.CardView
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
+            android:layout_columnWeight="1"
+            app:cardElevation="18dp">
             <LinearLayout
                 android:id="@+id/linearLayoutView4ID"
                 android:layout_width="wrap_content"

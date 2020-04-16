@@ -15,17 +15,19 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        LifeCounterFragment lifeCounterFragment = new LifeCounterFragment();
-        position = position + 1;
-        Bundle bundle = new Bundle();
-        bundle.putString("message", "Fragment : "+position);
-        lifeCounterFragment.setArguments(bundle);
-        return lifeCounterFragment;
+        switch(position){
+            case 0:
+                return new LifeCounterFragment();
+            case 1:
+                return new PoisonCounterFragment();
+            default:
+                throw new IllegalStateException("Unexpected value: " + position);
+        }
     }
 
     @Override
     public int getCount() {
-        return 1;
+        return 2;
     }
     @Override
     public CharSequence getPageTitle(int position){
