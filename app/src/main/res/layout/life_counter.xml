@@ -29,7 +29,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal">
                 <TextView
-                    android:id="@+id/lifeCountView1ID"
+                    android:id="@+id/poisonCountView1ID"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
                     android:autoSizeTextType="uniform"
@@ -44,7 +44,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal|center_vertical">
                 <Button
-                    android:id="@+id/decreaseLifeCountButtonView1ID"
+                    android:id="@+id/decreasePoisonCountButtonView1ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

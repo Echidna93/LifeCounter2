@@ -42,49 +42,49 @@ public PoisonCounterFragment(){
         if(container == null){
             return null;
         }
-        View ll = inflater.inflate(R.layout.life_counter, container, false);
+        View ll = inflater.inflate(R.layout.poison_counter, container, false);
         Log.d(TAG, "here");
         final List<Button> dButtons = new ArrayList<Button>();
         List<Button> iButtons = new ArrayList<Button>();
         int numPlayers = 4;
         final List<TextView> lifeCounts = new ArrayList<TextView>();
-        //setUpLifeCountViews(ll, lifeCounts, numPlayers);
+        //setUpPoisonCountViews(ll, lifeCounts, numPlayers);
 
-        TextView lifeCountView1 = (TextView) ll.findViewById(R.id.lifeCountView1ID);
-        lifeCountView1.setText("40");
+        TextView lifeCountView1 = (TextView) ll.findViewById(R.id.poisonCountView1ID);
+        lifeCountView1.setText("0");
         lifeCounts.add(lifeCountView1);
         TextView lifeCountView2 = (TextView) ll.findViewById(R.id.lifeCountView2ID);
-        lifeCountView2.setText("40");
+        lifeCountView2.setText("0");
         lifeCounts.add(lifeCountView2);
         TextView lifeCountView3 = (TextView) ll.findViewById(R.id.lifeCountView3ID);
-        lifeCountView3.setText("40");
+        lifeCountView3.setText("0");
         lifeCounts.add(lifeCountView3);
         TextView lifeCountView4 = (TextView) ll.findViewById(R.id.lifeCountView4ID);
-        lifeCountView4.setText("40");
+        lifeCountView4.setText("0");
         lifeCounts.add(lifeCountView4);
 
         // decrease buttons
 
-        Button decreaseLifeCountButtonView1 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView1ID);
-        dButtons.add(decreaseLifeCountButtonView1);
-        Button decreaseLifeCountButtonView2 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView2ID);
-        dButtons.add(decreaseLifeCountButtonView2);
-        Button decreaseLifeCountButtonView3 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView3ID);
-        dButtons.add(decreaseLifeCountButtonView3);
-        Button decreaseLifeCountButtonView4 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView4ID);
-        dButtons.add(decreaseLifeCountButtonView4);
+        Button decreasePoisonCountButtonView1 = (Button) ll.findViewById(R.id.decreasePoisonCountButtonView1ID);
+        dButtons.add(decreasePoisonCountButtonView1);
+        Button decreasePoisonCountButtonView2 = (Button) ll.findViewById(R.id.decreasePoisonCountButtonView2ID);
+        dButtons.add(decreasePoisonCountButtonView2);
+        Button decreasePoisonCountButtonView3 = (Button) ll.findViewById(R.id.decreasePoisonCountButtonView3ID);
+        dButtons.add(decreasePoisonCountButtonView3);
+        Button decreasePoisonCountButtonView4 = (Button) ll.findViewById(R.id.decreasePoisonCountButtonView4ID);
+        dButtons.add(decreasePoisonCountButtonView4);
 
         //increase buttons
-        Button increaseLifeCountButtonView1 = (Button) ll.findViewById(R.id.increaseLifeCountButtonView1ID);
-        iButtons.add(increaseLifeCountButtonView1);
-        Button increaseLifeCountButtonView2 = (Button) ll.findViewById(R.id.increaseLifeCountButtonView2ID);
-        iButtons.add(increaseLifeCountButtonView2);
+        Button increasePoisonCountButtonView1 = (Button) ll.findViewById(R.id.increasePoisonCountButtonView1ID);
+        iButtons.add(increasePoisonCountButtonView1);
+        Button increasePoisonCountButtonView2 = (Button) ll.findViewById(R.id.increasePoisonCountButtonView2ID);
+        iButtons.add(increasePoisonCountButtonView2);
         Log.d(TAG, "here");
-        Button increaseLifeCountButtonView3 = ll.findViewById(R.id.increaseLifeCountButtonView3ID);
-        Log.d(TAG, "below increaseLifeCountButtonView3");
-        iButtons.add(increaseLifeCountButtonView3);
-        Button increaseLifeCountButtonView4 = (Button) ll.findViewById(R.id.increaseLifeCountButtonView4ID);
-        iButtons.add(increaseLifeCountButtonView4);
+        Button increasePoisonCountButtonView3 = ll.findViewById(R.id.increasePoisonCountButtonView3ID);
+        Log.d(TAG, "below increasePoisonCountButtonView3");
+        iButtons.add(increasePoisonCountButtonView3);
+        Button increasePoisonCountButtonView4 = (Button) ll.findViewById(R.id.increasePoisonCountButtonView4ID);
+        iButtons.add(increasePoisonCountButtonView4);
 
         for(int i = 0; i < dButtons.size(); i++){
             Button iButton = iButtons.get(i);
@@ -111,7 +111,7 @@ public PoisonCounterFragment(){
         return ll;
     }
 
-    private void changeLifeTotal(TextView view, Button b){
+    private void changePoisonTotal(TextView view, Button b){
         String id = b.getResources().getResourceEntryName(b.getId());
         int lifeCount = Integer.parseInt(view.getText().toString());
         if(id.contains("decrease")) {
@@ -124,10 +124,10 @@ public PoisonCounterFragment(){
         }
     }
 /*
-    private void setUpLifeCountViews(View v, List list, int numPlayers){
+    private void setUpPoisonCountViews(View v, List list, int numPlayers){
         for(int i = 1; i <= numPlayers; i++){
             String n = "lifeCountView" + i + "ID";
-            TextView tv = (LifeCounterFragment) getView().findViewById(R.id.n);
+            TextView tv = (PoisonCounterFragment) getView().findViewById(R.id.n);
             tv.setText("40");
             list.add(tv);
         }

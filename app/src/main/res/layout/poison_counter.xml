@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
-        tools:context=".LifeCounterFragment">
+        tools:context=".PoisonCounterFragment">
 
         <!--row 0 col 0-->
         <androidx.cardview.widget.CardView
@@ -27,7 +27,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal">
                 <TextView
-                    android:id="@+id/lifeCountView1ID"
+                    android:id="@+id/poisonCountView1ID"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
                     android:autoSizeTextType="uniform"
@@ -42,7 +42,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal|center_vertical">
                 <Button
-                    android:id="@+id/decreaseLifeCountButtonView1ID"
+                    android:id="@+id/decreasePoisonCountButtonView1ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -51,7 +51,7 @@
                     android:textSize="@dimen/buttonTextSize"
                     style="@style/Widget.MaterialComponents.Button"/>
                 <Button
-                    android:id="@+id/increaseLifeCountButtonView1ID"
+                    android:id="@+id/increasePoisonCountButtonView1ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -91,7 +91,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal|center_vertical">
                 <Button
-                    android:id="@+id/decreaseLifeCountButtonView2ID"
+                    android:id="@+id/decreasePoisonCountButtonView2ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -100,7 +100,7 @@
                     android:textSize="@dimen/buttonTextSize"
                     style="@style/Widget.MaterialComponents.Button"/>
                 <Button
-                    android:id="@+id/increaseLifeCountButtonView2ID"
+                    android:id="@+id/increasePoisonCountButtonView2ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -138,7 +138,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal|center_vertical">
                 <Button
-                    android:id="@+id/decreaseLifeCountButtonView3ID"
+                    android:id="@+id/decreasePoisonCountButtonView3ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -147,7 +147,7 @@
                     android:text="-"
                     style="@style/Widget.MaterialComponents.Button"/>
                 <Button
-                    android:id="@+id/increaseLifeCountButtonView3ID"
+                    android:id="@+id/increasePoisonCountButtonView3ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -188,7 +188,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal|center_vertical">
                 <Button
-                    android:id="@+id/decreaseLifeCountButtonView4ID"
+                    android:id="@+id/decreasePoisonCountButtonView4ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -197,7 +197,7 @@
                     android:textSize="@dimen/buttonTextSize"
                     style="@style/Widget.MaterialComponents.Button"/>
                 <Button
-                    android:id="@+id/increaseLifeCountButtonView4ID"
+                    android:id="@+id/increasePoisonCountButtonView4ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

@@ -77,7 +77,7 @@ public class LifeCounterFragment extends Fragment {
         final List<TextView> lifeCounts = new ArrayList<TextView>();
         //setUpLifeCountViews(ll, lifeCounts, numPlayers);
 
-        TextView lifeCountView1 = (TextView) ll.findViewById(R.id.lifeCountView1ID);
+        TextView lifeCountView1 = (TextView) ll.findViewById(R.id.poisonCountView1ID);
         lifeCountView1.setText("40");
         lifeCounts.add(lifeCountView1);
         TextView lifeCountView2 = (TextView) ll.findViewById(R.id.lifeCountView2ID);
@@ -92,7 +92,7 @@ public class LifeCounterFragment extends Fragment {
 
         // decrease buttons
 
-        Button decreaseLifeCountButtonView1 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView1ID);
+        Button decreaseLifeCountButtonView1 = (Button) ll.findViewById(R.id.decreasePoisonCountButtonView1ID);
         dButtons.add(decreaseLifeCountButtonView1);
         Button decreaseLifeCountButtonView2 = (Button) ll.findViewById(R.id.decreaseLifeCountButtonView2ID);
         dButtons.add(decreaseLifeCountButtonView2);
