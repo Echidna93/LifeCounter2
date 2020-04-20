@@ -12,14 +12,14 @@
         android:rowCount="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         tools:context=".LifeCounterFragment">
 
         <!--row 0 col 0-->
         <androidx.cardview.widget.CardView
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
+            android:layout_columnWeight="1"
+            android:rotation="180">
             <LinearLayout
                 android:id="@+id/linearLayoutView1ID"
                 android:layout_width="wrap_content"
@@ -69,7 +69,8 @@
 
         <androidx.cardview.widget.CardView
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
+            android:layout_columnWeight="1"
+            android:rotation="180">
             <LinearLayout
                 android:id="@+id/linearLayoutView2ID"
                 android:layout_width="wrap_content"
