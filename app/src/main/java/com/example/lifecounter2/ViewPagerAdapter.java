@@ -34,13 +34,15 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         String title = "";
         switch (position){
             case 0:
-                title = "Life Counter";
+                title = "Life";
                 break;
             case 1:
-                title = "Posion Counters";
+                title = "Poison";
+                break;
+                case 2:
+                title = "Commander Damage";
                 break;
         }
-        //position = position + 1;
-        return title;
+    return title;
     }
 }
