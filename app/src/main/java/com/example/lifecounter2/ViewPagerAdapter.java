@@ -20,6 +20,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return new LifeCounterFragment();
             case 1:
                 return new PoisonCounterFragment();
+            case 2:
+                return new CommanderDamageFragment();
             default:
                 throw new IllegalStateException("Unexpected value: " + position);
         }
@@ -27,7 +29,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
     @Override
     public CharSequence getPageTitle(int position){
