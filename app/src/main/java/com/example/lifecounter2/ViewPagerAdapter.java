@@ -26,7 +26,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 throw new IllegalStateException("Unexpected value: " + position);
         }
     }
-
     @Override
     public int getCount() {
         return 3;
